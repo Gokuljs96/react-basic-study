@@ -17,11 +17,11 @@ function App() {
 
   <button onClick={addCount}>add</button>
     {
-      emp.map((obj,index)=>{
-        return(
+      emp.map((obj,index)=>
+        
           <Employee key={index}{...obj}/>
-        )
-      })
+        
+      )
 
     }
   
