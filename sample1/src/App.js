@@ -7,12 +7,15 @@ function App() {
     setCount(count+1)
    
 }
- 
+ let obj ={
+   title:'1st Counter',
+   count
+ }
  return (
     <div className='App'>
 
   <button onClick={addCount}>add</button>
-    <Counter title='1st Counter' count={count}/>
+    <Counter {...obj}/>
    
     <Counter title='2st Counter' count={count}/>
     </div>
